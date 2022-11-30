@@ -13,7 +13,7 @@ class Room:
             if e[0] == direction:
                 return e[1]
         return self
-    def connect_rooms(room1, dir1, room2, dir2):
+    def connect_rooms(self, room1, dir1, room2, dir2):
         #creates "dir1" exit from room1 to room2 and vice versa
         room1.add_exit(dir1, room2)
         room2.add_exit(dir2, room1)
